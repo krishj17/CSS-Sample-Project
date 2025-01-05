@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    background-image: url('Background_image_project.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    height: 80vh;
+    width: 80vw; 
+    border-radius: 15px;  
+}
+
+/* TOP PART BEGINS:- */
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: bolder;
+    margin-left: 40px;
+    background: linear-gradient(to right, darkred, red);
+    background-clip:text;   /* Clips the background gradient onto the text*/
+    color: transparent;     /* Here transpant property is used as we dont want our text to have a color by default (which is usually black or white as we know.)*/
+    cursor:pointer;
+}
+
+#links{
+    display: inline-block;
+    margin: 15px;
+    font-family:'Lucida Sans';
+    font-size: 15px;
+    word-spacing: 30px;
+}
+#links a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.5s linear;
+}
+#links a:hover{
+    color: red;
+    text-decoration: 1px underline white solid;
+    text-underline-offset: 5px;
+}
+
+/* MIDDLE PART BEGINS:- */
+#mid{
+    height: 80%;
+    width: 100%;
+    display: flex;      /* Here flex is used just to center the elements(div) and nothing more. */
+    align-items: center;
+}
+
+#text{
+    /* border: 2px solid red; */
+    margin: 10px;
+    width: 60%;
+}
+#gobutton a{
+    display: inline-block;
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Verdana;
+    color:antiquewhite;
+    background-image: linear-gradient(to right, darkmagenta, crimson);
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+#gobutton a:hover{      /* Starts the animation when hovered. */
+    animation: anibut 0.5s ease-in-out infinite alternate;
+}
+@keyframes anibut{
+    from{   border-width: 1px;  }
+    to{ border-width: 2px;  }
+}
+
+
+#image{
+    height: 60%;    /* These are the height and width of container div*/
+    width: 30%;
+    overflow: hidden;       /* overflow hidden hides the excess part of immage if it overflows out of the container.*/
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    animation: updown 2s ease-in-out infinite alternate;
+}
+img{
+    height: 100%;   /* Height and width is 100% to fill the container(div).*/
+    width: 100%;
+}
+img:hover{      /* Scale image by 10% when hovered. */
+    scale: 110%;
+}
+@keyframes updown{
+    from{   top: 80px;  }
+    to{    top: 100px;  }
+}
+
+/* CSS FILE END */
+/* CREATED BY - KRISH JARIWALA  DATED: 5/01/2025 */
